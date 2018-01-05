@@ -1,7 +1,7 @@
 class Student
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
-  attr_accessor :name,:grade
+  attr_accessor :name,:grade,:id
   DB = {:conn=>SQLite3::Database.new("db/students.db")}
 
   def initialize(name=nil,grade=nil,id=nil)
