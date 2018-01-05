@@ -29,7 +29,7 @@ class Student
     sql = <<-SQL
       INSERT INTO students (name,grade,id) VALUES (?, ?,?)
     SQL
-    DB[:conn].execute(sql,@name,@grade,@id)
+    DB[:conn].execute(sql,@name,@grade)
   end
 
 end
