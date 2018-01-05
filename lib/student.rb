@@ -3,6 +3,7 @@ class Student
   #  with DB[:conn]
   attr_accessor :name,:grade
   DB = {:conn=>SQLite3::Database.new("db/students.db")}
+  
   def initialize(name=nil,grade=nil)
     @name = name
     @grade = grade
@@ -15,8 +16,8 @@ class Student
         grade INTEGER
       )
       SQL
-      DB
-    
+      DB[:conn]
+
   end
 
 end
