@@ -35,6 +35,8 @@ class Student
   end
   def self.create(name:,grade:,:id)
     song = self.new(name,grade)
+    song.save
+    song
     # attributes.each{|key,value| self.send("#{key}=",value)}
 
   end
