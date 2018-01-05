@@ -4,7 +4,7 @@ class Student
   attr_accessor :name,:grade
   DB = {:conn=>SQLite3::Database.new("db/students.db")}
 
-  def initialize(name=nil,grade=nil)
+  def initialize(name=nil,grade=nil,id=nil)
     @name = name
     @grade = grade
   end
