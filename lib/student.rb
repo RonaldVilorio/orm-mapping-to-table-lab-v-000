@@ -37,8 +37,6 @@ class Student
     song = self.new(name,grade)
     song.save
     song
-    # attributes.each{|key,value| self.send("#{key}=",value)}
-
   end
 
 end
