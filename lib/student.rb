@@ -34,6 +34,7 @@ class Student
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
   end
   def self.create(name:,grade:,:id)
+    song = self.new(name,grade)
     # attributes.each{|key,value| self.send("#{key}=",value)}
 
   end
